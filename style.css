@@ -1,0 +1,90 @@
+body {
+    justify-content: center;
+    background-color: lightblue;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    background-image: url(https://source.unsplash.com/random/1920x1080/?wallpaper);
+    font-family: 'Baumans', cursive;
+    font-size: 120%;
+}
+
+.card {
+    background: #00000011;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    color: white;
+
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+
+    margin: 0.5em;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    outline: none;
+    background:#7c7c7c6b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    border: none;
+}
+
+button:hover{
+    background-color: #7c7c7c6b;
+    height: 3rem;
+    width: 3rem;
+    font-size: large;
+    
+}
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: 20rem;
+
+}
+.search-bar:hover{
+    height:3rem;
+    width: 30rem;
+}
+h1.temp{
+    margin:0;
+margin-bottom: 10px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+.description{
+    text-transform: capitalize;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+
+}
+.weather.loading::after{
+    visibility: visible;
+    content: "loading...";
+    color: whitesmoke;
+    position: absolute;
+    top:0px;
+    left: 20px;
+}
